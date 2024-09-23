@@ -107,7 +107,7 @@ html {
 
     .site-favicon {
       display: inline-block;
-      height: #{$header-height / 1.5};
+      height: #{calc($header-height / 1.5)};
       margin-right: 5px;
     }
   }
@@ -571,7 +571,9 @@ html {
     &:not(:first-child) {
       margin-top: 18px;
     }
-    margin-bottom: 8px;
+    & {
+      margin-bottom: 8px;
+    }
   }
 
   .post-meta {
@@ -695,7 +697,7 @@ html {
   }
 
   @include media-query($on-palm) {
-    height: #{$banner-height / 1.5};
+    height: #{calc($banner-height / 1.5)};
   }
 }
 
@@ -761,7 +763,9 @@ html {
       margin-left: 5px;
     }
 
-    color: #303030;
+    & {
+      color: #303030;
+    }
 
     &:hover {
       color: #000;

@@ -49,7 +49,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
-favicon: "" # the favicon for your site
+favicon: "/assets/favicon.png" # the favicon for your site
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -63,7 +63,7 @@ yat:
 header_transparent: false
 
 # If you want to change the content width, you can set to another value
-# content_width: "920px"
+content_width: "850px"
 
 # Google analytics - GA4
 # google_analytics: [Measurement ID]

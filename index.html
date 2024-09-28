@@ -7,8 +7,51 @@ title: Home
 ---
 <!-- banner: "/assets/images/banners/home.jpeg" -->
 
-<h1>Home Test</h1>
-tady popis 
-I also sometimes dump some travel pohotos
+<div style="height: 50px;"></div>
 
-longer blogposts when I feel like writing
+<h1>Welcome</h1>
+<div class="container">
+    <div  class="text-container">
+        I am Diana Varšíková, a data specialist and software engineering student.<br>
+        This blog should serve as my portfolio, but also as a place where I can freely dump my ideas and thoughts.<br>
+        I want to share some cool projects, some uncool ones and I also write longer blogposts when I feel like it. <br>
+
+        I've always wanted to create a travel blog of my own, but as I don't think thats happening anytime soon, I sometimes dump travel photos here aswell.<br>
+
+        You can search by tags, categories or date. <br>
+        You can find more about me in the <a href="">About</a> section. <br> <!-- TODO after domain -->
+    </div>
+    <div class="image-container">
+        <img src="{% images_url me.jpg %}" alt="Description of Image">
+    </div>
+    
+</div>
+
+<div style="height: 100px;"></div>
+
+<h1>
+    Latest Posts
+</h1>
+
+
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .image-container {
+        flex: 1;
+        padding: 2px;
+    }
+    .text-container {
+        flex: 2;
+        padding: 2px;
+    }
+    img {
+        max-width: 200px;
+        height: auto;
+        display: block;
+        border-radius: 50%;
+    }
+</style>

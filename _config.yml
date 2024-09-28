@@ -262,3 +262,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+
+exclude:
+  - .gitignore
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-theme-yat.gemspec
+  - README.md
+  - .jekyll-cache
+  - .ruby-version

@@ -1,4 +1,4 @@
-name: Build and deploy to manakjiri.cz
+name: Build and deploy to diana.lumias.cz
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
 
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --verbose"
+        run: bundle exec jekyll build --verbose
         env:
           JEKYLL_ENV: production
       - name: Build & Deploy Worker

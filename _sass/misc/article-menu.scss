@@ -30,7 +30,7 @@
       a {
         display: flex;
         padding: 2px 8px;
-        color: darken($text-color, 10%);
+        color: scale-color($text-color,$lightness: -10%);
 
         * {
           pointer-events: none;
@@ -38,7 +38,7 @@
 
         &:hover {
           text-decoration: none;
-          color: lighten($text-color, 30%)!important;
+          color: scale-color($text-color,$lightness: 30%)!important;
         }
       }
 
@@ -49,7 +49,7 @@
         margin-left: -2px;
 
         &:hover {
-          background-color: lighten($active-bgcolor, 2%);
+          background-color: adjust-color($active-bgcolor, $lightness: 2%);
         }
 
         a {

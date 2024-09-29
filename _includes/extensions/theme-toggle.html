@@ -28,6 +28,7 @@
     }
 
     function loadThemeData() {
+      /* console.log('loadThemeData'); */
       var data = storage.getItem('theme');
       try {
         data = JSON.parse(data ? data : '');
@@ -41,6 +42,7 @@
     function handleThemeToggle(nightShift) {
       themeData.nightShift = nightShift;
       saveThemeData(themeData);
+      /* console.log('handleTHemeToggle', nightShift); */
       html.dataset.theme = nightShift ? 'dark' : 'light';
       setTimeout(function() {
         sw.checked = nightShift ? true : false;
@@ -82,6 +84,7 @@
 
     // Listen the theme toggle event
     sw.addEventListener('change', function(event) {
+      console.log('change', event.target.checked);
       handleThemeToggle(event.target.checked);
     });
 

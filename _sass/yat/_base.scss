@@ -211,13 +211,13 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: lighten($text-color, 5%);
+  color: scale-color($text-color,$lightness: 5%);
   border-collapse: collapse;
   overflow: auto;
 
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
+      background-color: scale-color($grey-color-light,$lightness: 6%);
     }
   }
 
@@ -226,9 +226,9 @@ table {
   }
 
   th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
+    background-color: scale-color($grey-color-light,$lightness: 3%);
+    border: 1px solid scale-color($grey-color-light,$lightness: -4%);
+    border-bottom-color: scale-color($grey-color-light,$lightness: -12%);
   }
 
   td {

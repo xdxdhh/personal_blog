@@ -40,17 +40,6 @@
               {%- endif -%}
             {%- endfor -%}
 
-            {% comment %} {%- assign name = 'translate_langs' -%}
-            {%- include functions.html func='get_value' -%}
-            {%- assign translate_langs = return -%}
-            {%- if translate_langs.size > 0 -%}
-              {%- assign name = 'lang' -%}
-              {%- include functions.html func='get_value' default='en' -%}
-              {%- assign lang = return -%}
-              <div class="page-link" style="display: inline;">
-                  {%- include extensions/google-translate.html -%}
-              </div>
-            {%- endif -%} {% endcomment %}
           </div>
         </nav>
       {%- endif -%}

@@ -15,8 +15,8 @@ $text-color:       #1d1d1f !default;
 $background-color: #fff !default;
 
 $grey-color:       #777 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-light: scale-color($grey-color, $lightness: 40%) !default;
+$grey-color-dark:  scale-color($grey-color, $lightness: -25%) !default;
 
 $white-color: #fdfdfd !default;
 
@@ -27,11 +27,11 @@ $header-text-color: invert($theme-color) !default;
 $header-background-color: $theme-color !default;
 
 $footer-height: $header-height * 1.05 !default;
-$footer-text-color: lighten(invert($theme-color), 25%) !default;
-$footer-background-color: darken($theme-color, 5%) !default;
+$footer-text-color: scale-color(invert($theme-color),$lightness: 25%) !default;
+$footer-background-color: scale-color($theme-color, $lightness: -5%) !default;
 
 $banner-height: 640px !default;
-$banner-text-color: lighten($white-color, 0%) !default;
+$banner-text-color: scale-color($white-color, $lightness: 0%) !default;
 $banner-background: rgba(0,0,0,0.8) !default;
 
 // Width of the content area
@@ -65,7 +65,6 @@ $on-laptop:        800px !default;
   "misc/theme-toggle",
   "misc/article-menu",
   "misc/common-list",
-  "misc/google-translate",
   "misc/gitment",
   "misc/click-to-top"
 ;

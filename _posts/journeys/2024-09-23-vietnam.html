@@ -2,117 +2,86 @@
 layout: post
 title: Vietnam
 categories: data
-excerpt_image: {{ journeys_url vietnam\/vietnam_width.jpg }}
+excerpt_image: https://assets.diana.lumias.cz/journeys/vietnam/street_2.jpg
 tags: []
 ---
 
-{% include extensions/photo-swipe.html %}
+<html>
+  {% include extensions/nanogallery.html %}
 
-<p>{{ page.excerpt_image }}</p>
+  <body>
+    <!-- ### start of the gallery definition ### -->
+    <div
+      id="nanogallery2"
+      data-nanogallery2='{
+                        "thumbnailHeight":  700,
+                        "thumbnailWidth":   "auto",
+                        "itemsBaseURL":     "https://assets.diana.lumias.cz/journeys/vietnam/"
+                      }'
+    >
+      <!-- gallery content -->
+      <a
+        href="street_1.jpg"
+        data-ngThumb="street_1.jpg"
+      ></a>
+      <a
+        href="food_1.jpg"
+        data-ngThumb="food_1.jpg"
+      ></a>
+      <a
+        href="views_1.jpg"
+        data-ngThumb="views_1.jpg"
+      ></a>
+      <a
+        href="street_2.jpg"
+        data-ngThumb="street_2.jpg"
+      ></a>
+      <a
+        href="street_3.jpg"
+        data-ngThumb="street_3.jpg"
+      ></a>
+    </div>
 
-<section class="main photo-gallery">
-  <img
-    src="{% journeys_url vietnam/vietnam_width.jpg %}"
-    alt="Image 1 caption"
-    caption="Custom caption 1"
-  />
-  <img
-    src="{% journeys_url vietnam/vietnam_width.jpg %}"
-    alt="Image 2 caption"
-    caption="Custom caption 2"
-  />
-  <img
-    src="{% journeys_url vietnam/vietnam_width.jpg %}"
-    alt="Image 2 caption"
-    caption="Custom caption 2"
-  />
-  <img
-    src="{% journeys_url vietnam/vietnam_width.jpg %}"
-    alt="Image 2 caption"
-    caption="Custom caption 2"
-  />
-  <img
-    src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"
-    alt=""
-  />
-</section>
+    <div
+      id="nanogallery23"
+      data-nanogallery2='{
+                        "thumbnailHeight":  500,
+                        "thumbnailWidth":   "auto",
+                        "itemsBaseURL":     "https://assets.diana.lumias.cz/journeys/vietnam/"
+                      }'
+    >
+      <!-- gallery content -->
+      <a
+        href="food_2.jpg"
+        data-ngThumb="food_2.jpg"
+      ></a>
+      <a
+        href="food_3.jpg"
+        data-ngThumb="food_3.jpg"
+      ></a>
+      <a
+        href="food_4.jpg"
+        data-ngThumb="food_4.jpg"
+      ></a>
+    </div>
 
-<main class="main photo-gallery photo-4-page">
-    <img
-    src="{% journeys_url vietnam/vietnam_height.jpg %}"
-    caption="Custom caption 2"
-  />
-  <img
-    src="{% journeys_url vietnam/vietnam_height.jpg %}"
-    caption="Custom caption 2"
-  />
-  <img
-    src="{% journeys_url vietnam/vietnam_height.jpg %}"
-    caption="Custom caption 2"
-  />
-  <img
-    src="{% journeys_url vietnam/vietnam_height.jpg %}"
-    caption="Custom caption 2"
-  />
-</main>
-
-<div class="grid-layout photo-gallery">
-  <div class="column-one">
-    <img
-    src="{% journeys_url vietnam/vietnam_height.jpg %}"
-    caption="Custom caption 2"
-  />
-  </div>
-  <div class="column-two row-one">
-    <img
-    src="{% journeys_url vietnam/vietnam_width.jpg %}"
-    caption="Custom caption 2"
-  />
-  </div>
-  <div class="column-two row-two">
-    <img
-    src="{% journeys_url vietnam/vietnam_width.jpg %}"
-    caption="Custom caption 2"
-  />
-  </div>
-</div>
-
-
-<style>
-  .grid-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    grid-template-rows: auto auto; /* Two rows for the second column */
-    grid-template-areas:
-      "column-one column-two"
-      "column-one column-two-2"; /* Second row is only for the second column */
-    gap: 10px; /* Optional spacing between items */
-    height: 100%; /* Ensures the content takes full height if needed */
-  }
-
-  /* Styling the first column to span both rows */
-  .column-one {
-    grid-area: column-one;
-  }
-
-  .column-two.row-one {
-    grid-area: column-two;
-  }
-
-  .column-two.row-two {
-    grid-area: column-two-2;
-  }
-
-  .photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 photos per row */
-    grid-gap: 10px; /* Adjust the spacing between images */
-  }
-
-  /* Grid layout for the second gallery (4 images per row) */
-  .photo-4-page {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 photos per row */
-    grid-gap: 10px; /* Adjust the spacing between images */
-  }
-</style>
+    <div
+      id="nanogallery2"
+      data-nanogallery2='{
+                        "thumbnailHeight":  700,
+                        "thumbnailWidth":   "auto",
+                        "itemsBaseURL":     "https://assets.diana.lumias.cz/journeys/vietnam/"
+                      }'
+    >
+      <!-- gallery content -->
+      <a
+        href="temple_1.jpg"
+        data-ngThumb="temple_1.jpg"
+      ></a>
+      <a
+        href="temple_2.jpg"
+        data-ngThumb="temple_2.jpg"
+      ></a>
+    </div>
+  </body>
+</html>

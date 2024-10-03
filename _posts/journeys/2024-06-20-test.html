@@ -1,0 +1,44 @@
+---
+layout: post
+title: Test
+tags: []
+---
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js">
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" rel="stylesheet"/>
+ -->
+
+<html>
+        <head>
+            <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">          
+            
+            <!-- jQuery -->
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+          
+            <!-- nanogallery2 -->
+            <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+            <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+        </head>
+        <body>
+        
+              <h1>gallery made with nanogallery2</h1>
+
+              <!-- ### start of the gallery definition ### -->
+              <div id="nanogallery2"
+                  data-nanogallery2 = '{
+                        "thumbnailHeight":  250,
+                        "thumbnailWidth":   "auto",
+                        "itemsBaseURL":     "https://nanogallery2.nanostudio.org/samples/"
+                      }' >
+                      
+                  <!-- gallery content -->
+                  <a href = "{% journeys_url vietnam/vietnam_width.jpg %}"   data-ngThumb = "{% journeys_url vietnam/vietnam_width.jpg %}"></a>
+                  <a href = "berlin2.jpg"   data-ngThumb = "berlin2_t.jpg" ></a>
+                  <a href = "berlin3.jpg"   data-ngThumb = "berlin2_t.jpg" ></a>
+              </div>
+              <!-- ### end of the gallery definition ### -->
+            
+          </body>
+      </html>

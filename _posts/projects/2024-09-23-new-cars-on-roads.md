@@ -4,8 +4,10 @@ title: New Cars on Czech Roads
 subtitle: Which new cars are appearing on the czech roads?
 categories: visualizations
 tags: [visualizations, data]
-excerpt_image: /assets/projects/cars_first_idea.png
 ---
+
+<!-- {{ site.excerpt }} -->
+
 # Backstory
 When I was once driving home to Prague and debated family cars with my boyfriend I started to wonder what kind of cars do people buy nowadays. Is it still Skoda or Volkswagen or not? 
 What is the proportion of electric vehicles? How many years into the past should one look into to see some changes unfold? I then started to ponder if the data are publicly available somewhere.

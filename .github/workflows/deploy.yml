@@ -24,8 +24,10 @@ jobs:
         run: bundle exec jekyll build --verbose --trace
         env:
           JEKYLL_ENV: production
+
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
+        if: ${{ github.event_name == 'push' }}
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -5,7 +5,6 @@
 layout: home
 title: Home
 ---
-<!-- banner: "/assets/images/banners/home.jpeg" -->
 
 <div style="height: 50px;"></div>
 
@@ -13,16 +12,15 @@ title: Home
 <div class="container">
     <div  class="text-container">
         I am Diana Varšíková, a data specialist and software engineering student.<br>
-        This blog should serve as my portfolio, but also as a place where I can freely dump my ideas and thoughts.<br>
-        I want to share some cool projects, some uncool ones and I also write longer blogposts when I feel like it. <br>
+        This blog should serve as my portfolio, but also as a place where I can freely dump my ideas and thoughts.
+        I want to share some cool projects, some uncool ones and I also write longer blogposts when I feel like it.
 
         I've always wanted to create a travel blog of my own, but as I don't think thats happening anytime soon, I sometimes dump travel photos here aswell.<br>
 
-        You can search by tags, categories or date. <br>
-        You can find more about me in the <a href="">About</a> section. <br> <!-- TODO after domain -->
+        You can search by tags, categories or date and you can find more about me in the <a href="https://diana.lumias.cz/about/">About</a> section.
     </div>
     <div class="image-container">
-        <img src="{% images_url me.jpg %}" alt="Description of Image">
+        <img src="{% images_url me.jpg %}" alt="My photo">
     </div>
     
 </div>
@@ -42,7 +40,8 @@ title: Home
     }
     .image-container {
         flex: 1;
-        padding: 2px;
+        padding-right: 0px;
+        padding-left: 6px;
     }
     .text-container {
         flex: 2;
@@ -53,5 +52,20 @@ title: Home
         height: auto;
         display: block;
         border-radius: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center the elements */
+        }
+
+        .image-container {
+            order: 1; /* Photo first */
+        }
+
+        .text-container {
+            order: 2; /* Text second */
+        }
     }
 </style>

@@ -31,13 +31,20 @@ I tried to write down the questions that I was curious about and wanted them ans
 - What is the most popular month for buying a car? Probably not right after Christmas?
 
 
-I loaded the data into Python and was ready to go. 
+I loaded the data into Python and was ready to go.
+
+I filtered to only get M1 TODO.
+
+
 First I inspected the number of newly bought cars vs. the imported ones. The results did not surprise me very much, but what surprised me was that the average age of an imported car was 10 years! 
 And that was even after filtering cars that were more than TODO years old - as they are hopefully not regularly driven on the roads.
 No wonder that I see so many old cars on the Czech roads.
 
 
 TODO obrazek
+
+It surprised me how many fuel types were available. I assume those were plug-in hybrids as well as mild hybrids.
+I merged them into 5 total groups - petrol, ...., electric, .
 
 I was surprised to discover that only 3% of cars were electric and another 3% were hybrids. Curious about how this compared to the rest of Europe, I found that the EU average is 14.4% for electric vehicles and 35.6% for hybrids. This seemed quite low, so I did some further research online. It turned out the data was accurate: the Czech Republic lags behind most of the EU in new electric vehicle purchases. This alone would not surprise me, but the difference was much larger than I anticipated.
 

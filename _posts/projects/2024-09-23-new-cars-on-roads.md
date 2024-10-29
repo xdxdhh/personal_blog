@@ -55,8 +55,20 @@ Thanks to this Škoda's massive market share, five of the six most purchased car
 The only exception was the Hyundai i30, which managed to break into the top ranks.
 The most popular brand of pure EVs (not hybrids) was Tesla, which accounted for 37% of all new EVs.
 
+TODO Obrazek
+
+The most popular color trio was, unsurprisingly, gray, white, and black, followed by blue and red.
 
 TODO Obrazek
+
+
+Registrations were fairly evenly distributed over the six months, with perhaps a slight upward trend. There was an EU initiative aimed at boosting EV sales, which led the Czech government to introduce a program offering businesses a discount of up to 300,000 CZK on electric vehicle purchases—a significant incentive. This initiative began in mid-March, and I believe the first EVs bought through this program appeared in April. (By the way, the 2 billion CZK allocated for this program was fully used up by the end of October, making it quite a success.) So, I wondered if I will be able to see higher number of EV registrations from April onwards.
+
+TODO Results
+
+I would also like to make a separate analysis of the results of this initiative in the future, as I find it quite interesting.
+
+power output
 
 
 
@@ -74,3 +86,5 @@ I was able to get the half doughnut, but not the arrow.
 Thankfully a combination of good old GIMP with Canva saved me, and I obtained a somewhat acceptable chart.
 
 ![Cars posters proof of concept]({% projects_url cars_gauge.png %}){: .center-block style="width: 50%; max-width: 300px; height: auto;" }
+
+The other charts were not that difficult to get, and by doing the labels in Canva it was even easier.

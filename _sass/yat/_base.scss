@@ -178,7 +178,12 @@ pre {
   }
 }
 
-
+.post h1 {
+  font-size: 2.5em; /* Adjust this value as needed */
+  font-weight: bold; /* Optional: Makes the title bolder */
+  margin-top: 0.5em; /* Optional: Adds space above the title */
+  margin-bottom: 0.5em; /* Optional: Adds space below the title */
+}
 
 /**
  * Wrapper

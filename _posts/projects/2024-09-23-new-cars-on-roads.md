@@ -8,48 +8,69 @@ tags: [visualizations, data]
 
 <!-- {{ site.excerpt }} -->
 
-# Backstory
-When I was once driving home to Prague and debated family cars with my boyfriend I started to wonder what kind of cars do people buy nowadays. Is it still Skoda or Volkswagen or not? 
-What is the proportion of electric vehicles? How many years into the past should one look into to see some changes unfold? I then started to ponder if the data are publicly available somewhere.
 
-I've recently finished [Data Sketches book](https://www.datasketch.es/) by Nadieh Bermer and Shirley Wu, so I got an idea of attempting to create a poster with this information, which is something I've never done before.
+When I was once driving home to Prague and debated family cars with my boyfriend, I began to wonder what kind of cars people buy nowadays. Is it still Skoda or Volkswagen, or is there finally some change in the air?
+What is the proportion of electric vehicles? How many years into the past should one look into to see some changes unfold? I then started to ponder whether the data were publicly available somewhere.
+
+I've recently finished the [Data Sketches](https://www.datasketch.es/) book by Nadieh Bremer and Shirley Wu, so I got the idea of trying to create a poster with this information, which I've never done before.
 
 
-## Data
-Quick search brought me to ministerstvo dopravy, which appeared to have the exact data - about new vehicle registrations, even archive for multiple years.
-One day sometime later I sat down to my computer after a month of hilday and I downloaded the data. To my sadness I found out that its quality was not the best and I deemed it unusable.
-After another bit of searching, I found the [Registr vozidel Datacube](https://www.dataovozidlech.cz/), where I managed to obtain the neccessary data (so new registration in Czech republic from 1.1 to 1.7) in good enough quality.
+A quick search brought me to the Ministry of Transport, which appeared to have the exact data - about new vehicle registrations, even archives for multiple years.
+One day sometime later I finally managed to find some time and sat down at my computer and downloaded the data. To my sadness, I found out that its quality was not the best and I deemed it unusable.
+After another bit of searching, I found the [Vehicle Registration Datacube](https://www.dataovozidlech.cz/), where I managed to obtain the necessary data (all vehicle registrations in the Czech Republic from January to July) in good enough quality.
 
-<!-- ![Cars data example](/assets/projects/cars_data_example.png){: .center-block :} -->
 ![Cars data example]({% projects_url cars_data_example.png %}){: .center-block :}
 
-There were many typos in dates (e.g. 0215 instead of 2015), but after fixing that it was ready to go.
-
-
-## Questions
-
-I sat down and tried to write down the questions that I was curious about and wanted them answered:
-- What is the proportion of newly bought / imported from somewhere else
-- What is the proportion of hybrids and electric cars (difference from previous years?)
-- Top 5 models purchased
-- Most popular brands - is it still Skoda and VW?
-- What colors are trendy
+Upon closer inspection of the data I found many typos in dates (e.g. 0215 instead of 2015), but after fixing that it was ready to go.
+I tried to write down the questions that I was curious about and wanted them answered (and preferably also visualized):
+- What is the proportion of newly bought cars and cars imported from different county?
+- What is the proportion of hybrids and electric cars (maybe also difference from previous years)?
+- Top 5 models purchased?
+- Most popular brands - is it still Skoda and Volkswagen?
+- What colors are trendy?
 - What is the most popular month for buying a car? Probably not right after Christmas?
 
 
-## Analysis
+I loaded the data into Python and was ready to go. 
+First I inspected the number of newly bought cars vs. the imported ones. The results did not surprise me very much, but what surprised me was that the average age of an imported car was 10 years! 
+And that was even after filtering cars that were more than TODO years old - as they are hopefully not regularly driven on the roads.
+No wonder that I see so many old cars on the Czech roads.
 
-The analysis with the code can also be found in XX.
 
-## Poster Creation
-As I've never created a poster before, I did some research to what tools to use. I was playing with the idea of using D3.js, but after seeing the overhead of creating a simple bar chart in D3.js, I decided not to go into this direction. (However, I understand the appeal of being able to control every figure aspect in D3.js and definitely want to revisit it in the future!)
+TODO obrazek
+
+I was surprised to discover that only 3% of cars were electric and another 3% were hybrids. Curious about how this compared to the rest of Europe, I found that the EU average is 14.4% for electric vehicles and 35.6% for hybrids. This seemed quite low, so I did some further research online. It turned out the data was accurate: the Czech Republic lags behind most of the EU in new electric vehicle purchases. This alone would not surprise me, but the difference was much larger than I anticipated.
+
+![EV EU vs Czech]({% projects_url cars_eu_czech_ev.png %})
+_Source: [European Environment Agency](https://www.eea.europa.eu/en/analysis/indicators/new-registrations-of-electric-vehicles)_
+
+Not gonna lie, this fact made me a bit sad.
+
+
+What didn’t surprise me, though, were the most popular car brands. As expected, Škoda and Volkswagen dominated the market, with Škoda accounting for almost a third of all new cars. Volkswagen managed 11.5%, while Hyundai and Toyota each captured over 6%. All other brands made up only a few percent.
+
+TODO Obrazek
+
+Thanks to this Škoda's massive market share, five of the six most purchased cars were Škoda models. 
+The only exception was the Hyundai i30, which managed to break into the top ranks.
+The most popular brand of pure EVs (not hybrids) was Tesla, which accounted for 37% of all new EVs.
+
+
+TODO Obrazek
+
+
+
+As I've never created a poster before, I did some research on what tools to use. I was playing with the idea of using D3.js, but after seeing the overhead of creating a simple bar chart in D3.js, I decided not to go in this direction. (However, I understand the appeal of being able to control every figure aspect in D3.js and definitely want to revisit it in the future!)
 So I decided to stick to something I know and that is generating the figures in Python.
-For the poster itself, after some search I found Canva, which seemed to do what I needed, without harsh learning curve.
+For the poster itself, after some searching, I found Canva, which seemed to do what I needed, without any harsh learning curve.
 
-Before I started with the poster itself, I did a quick sketch of my imagination (I decided to use czech language for this one, as it was the target data country).
+Before I started with the poster itself, I did a quick sketch of my imagination (I decided to use the Czech language for the poster, as it was the target data country).
+My first imagination looked like this :D
 
-<!-- ![Cars posters proof of concept](/assets/projects/cars_first_idea.png){: .center-block :} -->
 ![Cars posters proof of concept]({% projects_url cars_first_idea.png %}){: .center-block :}
 
-I quickly got an idea of using speedometer gauge for the proportion of new cars / foreign cars, but quickly found out its quite hard to do in Python.
-I was able to get the half dougnut, but not the arrow.
+I immediately got the idea of using a speedometer gauge for the proportion of new and imported cars, but quickly found out it is quite hard to do in Python.
+I was able to get the half doughnut, but not the arrow.
+Thankfully a combination of good old GIMP with Canva saved me, and I obtained a somewhat acceptable chart.
+
+![Cars posters proof of concept]({% projects_url cars_gauge.png %}){: .center-block style="width: 50%; max-width: 300px; height: auto;" }

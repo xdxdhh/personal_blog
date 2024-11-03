@@ -44,6 +44,7 @@
       saveThemeData(themeData);
       /* console.log('handleTHemeToggle', nightShift); */
       html.dataset.theme = nightShift ? 'dark' : 'light';
+      sw.checked = nightShift ? true : false;
       setTimeout(function() {
         sw.checked = nightShift ? true : false;
       }, 50);
@@ -84,7 +85,7 @@
 
     // Listen the theme toggle event
     sw.addEventListener('change', function(event) {
-      console.log('change', event.target.checked);
+      /* console.log('change', event.target.checked); */
       handleThemeToggle(event.target.checked);
     });
 

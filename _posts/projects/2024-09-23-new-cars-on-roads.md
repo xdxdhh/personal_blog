@@ -4,7 +4,7 @@ title: Quick Look at New Cars on Czech Roads
 subtitle: Which new cars are appearing on the czech roads?
 categories: visualizations
 tags: [visualizations, data]
-excerpt_image: assets/cars_excerpt.jpg
+excerpt_image: assets/excerpts/cars_excerpt.jpg
 ---
 
 
@@ -90,7 +90,7 @@ about the discount. I would also like to make a separate analysis of the results
 
 After crunching the numbers it was time to make the poster idea into reality.
 
-As I've never created a poster before, I did some research on what tools to use. I was playing with the idea of using D3.js, but after seeing the overhead of creating a simple bar chart in D3.js, I decided not to go in this direction. (However, I understand the appeal of being able to control every figure aspect in D3.js and definitely want to revisit it in the future!)
+As I've never created a poster before, I did some research on what tools to use. I was playing with the idea of using [D3.js](https://d3js.org/), but after seeing the overhead of creating a simple bar chart in D3.js, I decided not to go in this direction. (However, I understand the appeal of being able to control every figure aspect in D3.js and definitely want to revisit it in the future!).
 In the end I decided to stick to something I know and that is generating the figures in Python.
 For the poster itself, after some searching, I found Canva, which seemed to do what I needed, without any harsh learning curve.
 
@@ -115,8 +115,8 @@ modely
 intermediate results
 
 
-final results
-After showing the poster to my boyfriend he made some really good suggestions, mainly about the flow of the text (in what order does he percieve different parts of the poster). So it was time for one last iteration and voilá, the end result is here.
+
+After showing the intermediate posters to my boyfriend he made some really good suggestions, mainly about the flow of the text (in what order does he percieve different parts of the poster). So it was time for one last iteration and voilá, the end result is here.
 
 
 ![Cars posters final]({% projects_url cars_poster_final.png %}){: .full }

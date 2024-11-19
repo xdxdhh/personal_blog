@@ -468,12 +468,18 @@ html {
     img, svg, iframe {
       margin-left: auto;
       margin-right: auto;
+      
     }
-
+    
+    
     img:not(.emoji), svg, iframe {
       display: block;
       max-height: 50vh;
     }
+
+    .full {
+      max-height: initial !important;
+    } 
 
     h2, h3, h4, h5, h6 {
       margin: 60px 0 19px;

@@ -63,7 +63,7 @@ _Source: [European Environment Agency](https://www.eea.europa.eu/en/analysis/ind
 Not gonna lie, learning this fact made me a bit sad.
 
 What didn’t surprise me, though, were the most popular car brands. 
-As expected, Škoda and Volkswagen dominated the market, with Škoda accounting for neraly a third of all new cars. Volkswagen managed 11.5%, while Hyundai and Toyota each captured over 6%. All other brands made up only a few percent.
+As expected, Škoda and Volkswagen dominated the market, with Škoda accounting for nearly a third of all new cars. Volkswagen managed 11.5%, while Hyundai and Toyota each captured over 6%. All other brands made up only a few percent.
 
 ![Cars brands]({% projects_url cars_brands.png %}){: .center-block :}
 
@@ -84,8 +84,8 @@ Registrations were fairly evenly distributed over the six months, with perhaps a
 ![Cars monthly registrations]({% projects_url cars_monthly_registrations.png %}){: .center-block :}
 
 And yes, there really was a bump in EV registrations after April (yay!). This chart shows EVs combined with
-hybrids, and increase was seen for both of these types. However, the biggest difference in Junu was cause majorly by pure EVs, getting from 1041 sold in May to 1861 sold in June (while hybrids stayed roughly the same - 1092 in May and 1070 in July). I think the the growth will be even bigger in following months, as businesses find out 
-about the discount. I would also like to make a separate analysis of the results of this initiative in the future, as I find it quite interesting.
+hybrids, and increase was seen for both of these types. However, the biggest difference in June was caused majorly by pure EVs, getting from 1041 sold in May to 1861 sold in June (while hybrids stayed roughly the same - 1092 in May and 1070 in July). I think the the growth will be even bigger in following months, as businesses find out 
+about the discount. I would like to make a separate analysis of the results of this initiative in the future, as I find it quite interesting.
 
 
 After crunching the numbers it was time to make the poster idea into reality.
@@ -99,30 +99,29 @@ My first sketch looked like this :D
 
 ![Cars posters proof of concept]({% projects_url cars_first_idea.png %}){: .center-block :}
 
-I immediately got the idea of using a speedometer gauge for the proportion of new and imported cars, but quickly found out it is quite hard to do in Python.
-I was able to get the half doughnut, but not the arrow.
-Thankfully a combination of good old GIMP with Canva saved me, and I obtained a somewhat acceptable chart.
+
+I quickly got the idea to use a speedometer gauge to represent the proportion of new versus imported cars. It felt like a natural and fun choice for this type of data. However, implementing it in Python proved to be quite tricky. While I managed to create the half-doughnut chart, adding the arrow turned out to be a challenge.
+
+Luckily, good old GIMP combined with Canva came to the rescue. With some extra effort, I created a gauge chart that felt acceptable:
 
 ![Cars gauge]({% projects_url cars_gauge.png %}){: .center-block style="width: 50%; max-width: 300px; height: auto;" }
 
-The other charts were not that difficult to get, and by doing the labels in Canva it was even easier.
-
-TODO popsat vznik treechartu a prezentace modelů.
-
-modely
+The other charts were more straightforward to create. Using Canva for labels made the entire process much easier and gave the visuals a polished look.
 
 
-intermediate results
+One of my favorite ideas was showcasing the most popular car models. To my delight, I found high-quality downloadable images of models from Škoda, Hyundai, and Tesla in formats like AVIF, PNG, and WebP. These visuals added a lot of character to the poster and really helped bring the data to life.
+
+During an intensive one-day design session, I went through three or four iterations of the poster design. Each iteration brought me closer to a more polished and cohesive look.
+
+<!---
+Add picture of intermediate results - photo of the printed posters
+-->
 
 
-
-After showing the intermediate posters to my boyfriend he made some really good suggestions, mainly about the flow of the text (in what order does he percieve different parts of the poster). So it was time for one last iteration and voilá, the end result is here.
-
+After showing the intermediate posters to my boyfriend, he provided some really valuable feedback, particularly about the flow of the text. He pointed out how he perceived the different sections of the poster and suggested improvements to make the layout more intuitive. With his input in mind, I went back for one last iteration—and voilà, the final result was ready:
 
 ![Cars posters final]({% projects_url cars_poster_final.png %}){: .full }
 
 
-
-I must doing a poster was quite fun experience, even though the results is certainly nothing exceptional.
-But, as it was my first one, I am quite pleased with the result and may try to do something similar with
-different data in the futur
+Creating this poster turned out to be a surprisingly fun experience, even though the results is certainly nothing exceptional.
+As my first attempt at a data visualization poster, I’m quite happy with it. I'd love to explore something similar with different datasets in the future.

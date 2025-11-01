@@ -8,7 +8,7 @@ permalink: /about/
     <h2>Diana Varšíková</h2>
     <div class="container">
         <div class="image-container">
-            <img src="{% images_url me.jpg %}" alt="My photo">
+            <img src="{% images_url me.jpg %}" alt="My photo" class="emoji">
         </div>
         <div class="text-container">
             <p> 
@@ -71,6 +71,7 @@ permalink: /about/
         height: auto;
         display: block;
         border-radius: 50%;
+        pointer-events: none;
     }
 
     @media screen and (max-width: 768px) {

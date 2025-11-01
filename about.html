@@ -5,87 +5,118 @@ permalink: /about/
 ---
 
 <body>
-    <h2>Diana Varšíková</h2>
-    <div class="container">
-        <div class="image-container">
-            <img src="{% images_url me.jpg %}" alt="My photo" class="emoji">
-        </div>
-        <div class="text-container">
-            <p> 
-                I studied statistics during my undergrad, and after getting armed with all the stats knowledge I may ever need, I decided to pursue a more technical master's, namely in Software and Data Engineering.
-                I like digging into random data I find.
-            </p>
-        </div>
+  <h2>Diana Varšíková</h2>
+  <div class="container">
+    <div class="image-container">
+      <img src="{% images_url me.jpg %}" alt="My photo" class="emoji" />
     </div>
-    <div>
-        <a href="https://github.com/xdxdhh">github</a> | <a href="https://www.linkedin.com/in/diana-var%C5%A1%C3%ADkov%C3%A1-556231220/">linkedIn</a>
+    <div class="text-container">
+      <p>
+        I studied statistics during my undergrad, and after getting armed with
+        all the stats knowledge I may ever need, I decided to pursue a more
+        technical master's, namely in Software and Data Engineering. 
+        These days, I spend most of my time solving problems using LLMs and exploring random datasets that peak my interest.
+        I'm pretty tech-versatile as I've worked on everything from big ML projects to mobile apps, web apps, and database tuning.
+      </p>
     </div>
-    <div>
-        <h4>
-            Professional Experience
-        </h4>
-        <p>
-            <strong>Data Specialist</strong> at EcoMole Ltd. <strong>(currently)</strong>
-        </p>
-        <p>
-            <strong>Software Developer</strong> at Big Dig Data s.r.o. <strong>(currently)</strong>
-        </p>
-        <p>
-            <strong>Data Management Specialist</strong> at UniCredit Bank Czech Republic and Slovakia a.s. <strong>(Jun2022 - Sep2022)</strong>
-        </p>
-        <p>
-            <strong>Data Analyst Trainee</strong> at UniCredit Bank Czech Republic and Slovakia a.s. <strong>(Jul2021 - Jun2022)</strong>
-        </p>
-        
+  </div>
+  <div style="height: 25px"></div>
+  <div>
+    <a href="https://github.com/xdxdhh">github</a> |
+    <a
+      href="https://www.linkedin.com/in/diana-var%C5%A1%C3%ADkov%C3%A1-556231220/"
+      >linkedIn</a
+    >
+  </div>
+  <div style="height: 25px"></div>
+  <div>
+    <h3>Professional Experience</h3>
+    <ul>
+      <li>
+        <strong>Creator</strong> of
+        <a href="https://uctenkovnik.cz/">Účtenkovník</a>
+        <strong>(currently)</strong>
+      </li>
+      <div style="height: 10px"></div>
+      <li>
+        <strong>Data Specialist</strong> at EcoMole Ltd.
+        <strong>(currently)</strong><br>
+        Worked as a data specialist on several projects for EFSA and Joint Research Centre.
+        The topics were mostly <a href="https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/sp.efsa.2025.EN-9256">novel foods</a> and NAMs.
+      </li>
+      <div style="height: 10px"></div>
+      <li>
+        <strong>Software Developer</strong> working on
+        <a href="https://www.celus.net/">CELUS</a> <strong>(currently)</strong><br>
+        Mostly working on data-related tasks and adding AI and statistics powered features.
+      </li>
+      <div style="height: 10px"></div>
+      <li>
+        <strong>Data Management Specialist</strong> at UniCredit Bank Czech
+        Republic and Slovakia a.s. <strong>(Jun 2022 - Sep 2022)</strong>
+      </li>
+      <div style="height: 10px"></div>
+      <li>
+        <strong>Data Analyst Trainee</strong> at UniCredit Bank Czech Republic
+        and Slovakia a.s. <strong>(Jul 2021 - Jun 2022)</strong>
+      </li>
+    </ul>
 
-        <h4>
-            Education
-        </h4>
-        <p>
-            <strong>MSc. in Software and Data Engineering</strong>, Charles University in Prague
-        </p>
-        <p>
-            <strong>BSc. in Applied Mathematical Stochastic Methods</strong>, Czech Technical University in Prague<br>
-            Bachelor thesis:  <a href="https://dspace.cvut.cz/handle/10467/111265">Data clustering in Hilbert spaces</a>
-        </p>
-    </div>
+    <h3>Education</h3>
+    <p>
+      <strong>Master in Software and Data Engineering</strong>, Charles
+      University in Prague<br />
+      Master thesis:
+      <a href="https://dspace.cuni.cz/handle/20.500.11956/202858"
+        >Processing e-Resources Usage Data using LLM Agents</a
+      >
+    </p>
+    <p>
+      <strong>Bachelor in Applied Mathematical Stochastic Methods</strong>,
+      Czech Technical University in Prague<br />
+      Bachelor thesis:
+      <a href="https://dspace.cvut.cz/handle/10467/111265"
+        >Data clustering in Hilbert space</a
+      >
+    </p>
+  </div>
 </body>
 
 <style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .image-container {
+    flex: 1;
+    padding-right: 10px;
+    padding-left: 2px;
+  }
+  .text-container {
+    flex: 2;
+    padding: 2px;
+  }
+  img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 768px) {
     .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
     }
+
     .image-container {
-        flex: 1;
-        padding-right: 10px;
-        padding-left: 2px;
+      order: 1;
     }
+
     .text-container {
-        flex: 2;
-        padding: 2px;
+      order: 2;
     }
-    img {
-        max-width: 200px;
-        height: auto;
-        display: block;
-        border-radius: 50%;
-        pointer-events: none;
-    }
-
-    @media screen and (max-width: 768px) {
-        .container {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .image-container {
-            order: 1;
-        }
-
-        .text-container {
-            order: 2;
-        }
-    }
+  }
 </style>

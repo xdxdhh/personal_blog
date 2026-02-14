@@ -9,12 +9,12 @@ excerpt_image: assets/excerpts/cars_excerpt.jpg
 
 
 When I was once driving home, discussing family cars with my boyfriend, I started wondering about the kinds of cars people buy nowadays.
-
 Is it still Skoda and Volkswagen, or is there finally some change in the air?
 What's the proportion of electric vehicles? And how many of those vehicles are imported from different countries?
-I then began to wonder whether this data was publicly available somewhere.
 
-<!-- TODO tady chci aby koncil excerpts -->
+<!--excerpt-->
+
+I then began to wonder whether this data was publicly available somewhere.
 
 Having recently finished the [Data Sketches](https://www.datasketch.es/) book by Nadieh Bremer and Shirley Wu, I was inspired to try creating a poster with this information—a format I’d never tried before.
 
